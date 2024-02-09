@@ -1,3 +1,5 @@
+// Time complexity - O(log n)
+
 public class binarySearch {
     public static int binSearch(int arr[],int key){
         int start = 0;
