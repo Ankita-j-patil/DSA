@@ -7,10 +7,10 @@ public class shortestPath {
         for(int i=0;i<path.length();i++){
             char dir = path.charAt(i);
             if(dir == 'S'){
-                y++;
+                y--;
             }
             else if(dir == 'N'){
-                y--;
+                y++;
             }
             else if(dir == 'E'){
                 x++;
