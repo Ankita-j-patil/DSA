@@ -11,5 +11,16 @@ public class bitManipulation {
         // Binary XOR(^)
         System.out.println(5^6);
 
+        // 1's Complement
+        System.out.println(~5);
+
+        System.out.println(~0);
+
+        // Left shift operator
+        System.out.println(5<<2);
+
+        // Right shift operator
+        System.out.println(6>>1);
+
     }
 }
