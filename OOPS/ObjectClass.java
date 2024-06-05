@@ -12,6 +12,13 @@ public class ObjectClass {
         // we can also write
         p1.color = "Pink";
         System.out.println(p1.color);
+
+        BankAccount myAcc = new BankAccount();
+        myAcc.username = "AnkitaPatil";
+        // myAcc.password = "ank"; can't set like this because password is private 
+        myAcc.setPassword("Ank");
+        // but it is not accessible we only change password
+        
     }
 }
 
@@ -37,5 +44,13 @@ class Student{
 
     void calPercentage(int physics,int chemistry,int maths){
         percentage = ((physics+chemistry+maths)/3)*100;
+    }
+}
+
+class BankAccount{
+    public String username;
+    private String password;
+    public void setPassword(String pwd){
+        password = pwd;
     }
 }
