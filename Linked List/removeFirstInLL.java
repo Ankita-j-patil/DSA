@@ -1,3 +1,4 @@
+// Remove first node from linked list
 public class removeFirstInLL {
     public static class Node{
         int data;
