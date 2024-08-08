@@ -1,9 +1,10 @@
 // Remove first node from linked list
-// Remove last node from linked list
+// Remove last node from linked list 
+
 public class removeFirstInLL {
     public static class Node{
         int data;
-        Node next;
+        Node next; //node creation
 
         public Node(int data){
             this.data = data;
