@@ -5,7 +5,7 @@ public class addInTheMiddleOfLL {
 
         public Node(int data){
             this.data = data;
-            this.next = null;
+            this.next = null;//next node
         }
     }
     public static Node head;
