@@ -22,7 +22,7 @@ public class sudokuSolver {
                     return false;
                 }
             }
-        }
+        } 
         return true;
     }
     public static boolean sudoku(int sudoku[][],int row,int col){
