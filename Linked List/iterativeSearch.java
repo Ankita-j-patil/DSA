@@ -1,7 +1,7 @@
 public class iterativeSearch {
     public static class Node{
         int data;
-        Node next; //node creation
+        Node next; 
 
         public Node(int data){
             this.data = data;
