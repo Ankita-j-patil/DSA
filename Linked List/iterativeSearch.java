@@ -13,7 +13,7 @@ public class iterativeSearch {
     public static int size;
 
     public void addFirst(int data){
-        // step1 create new node
+        
         Node newNode = new Node(data);
         size++;
         if(head == null){
