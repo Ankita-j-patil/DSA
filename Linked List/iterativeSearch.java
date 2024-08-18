@@ -21,7 +21,7 @@ public class iterativeSearch {
             return;
         }
 
-        // step2 newNode next = head
+        
         newNode.next = head; //link
 
         // step3 head = newNode
