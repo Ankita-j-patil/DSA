@@ -27,6 +27,7 @@ public class recursiveSearch {
         head = newNode;
     }
     public static void main(String[] args) {
-        
+        recursiveSearch ll = new recursiveSearch();
+        ll.addFirst(1);
     }
 }
