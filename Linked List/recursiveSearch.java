@@ -29,5 +29,7 @@ public class recursiveSearch {
     public static void main(String[] args) {
         recursiveSearch ll = new recursiveSearch();
         ll.addFirst(1);
+        ll.addFirst(2);
+        ll.addFirst(3);
     }
 }
