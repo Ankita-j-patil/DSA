@@ -21,9 +21,9 @@ public class recursiveSearch {
         }
 
         
-        newNode.next = head; //link
+        newNode.next = head; 
 
-        // step3 head = newNode
+        
         head = newNode;
     }
     public static void main(String[] args) {
