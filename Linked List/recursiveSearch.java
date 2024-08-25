@@ -26,6 +26,20 @@ public class recursiveSearch {
         
         head = newNode;
     }
+
+    public void addLast(int data){
+        Node newNode = new Node(data);
+        size++;
+        if(head == null){
+            head = tail = newNode;
+            return;
+        }
+
+        tail.next = newNode;
+
+        tail = newNode;
+    }
+    
     public static void main(String[] args) {
         recursiveSearch ll = new recursiveSearch();
         ll.addFirst(1);
