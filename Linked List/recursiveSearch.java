@@ -47,5 +47,6 @@ public class recursiveSearch {
         ll.addFirst(3);
         ll.addFirst(4);
         ll.addLast(5);
+        ll.addLast(6);
     }
 }
