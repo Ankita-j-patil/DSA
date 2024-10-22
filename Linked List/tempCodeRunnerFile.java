@@ -1,5 +1,2 @@
-ll.removeFirst();
-        // ll.print();
-        // ll.removeLast();
-        // ll.print();
-        // System.out.println(ll.size);
+ // ll.addLast(5);
+        // ll.add(2,3 );
