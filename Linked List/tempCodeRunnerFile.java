@@ -1,2 +1,1 @@
- // ll.addLast(5);
-        // ll.add(2,3 );
+head.next.next.next = head;
