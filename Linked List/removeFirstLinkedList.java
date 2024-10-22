@@ -69,7 +69,7 @@ public class removeFirstLinkedList {
         ll.print();
         ll.addLast(4);
         ll.print();
-       System.out.println(ll.size());
+       System.out.println(ll.size);
        
 }
 }

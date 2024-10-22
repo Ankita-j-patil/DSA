@@ -1,7 +1,7 @@
 public class iterativeSearch {
     public static class Node{
         int data;
-        Node next; 
+        Node next; //node creation
 
         public Node(int data){
             this.data = data;
@@ -13,7 +13,7 @@ public class iterativeSearch {
     public static int size;
 
     public void addFirst(int data){
-        
+        // step1 create new node
         Node newNode = new Node(data);
         size++;
         if(head == null){
@@ -21,7 +21,7 @@ public class iterativeSearch {
             return;
         }
 
-        
+        // step2 newNode next = head
         newNode.next = head; //link
 
         // step3 head = newNode
@@ -85,13 +85,54 @@ public class iterativeSearch {
         head = head.next;
         size--;
         return val;
-    public static void main(String[] args){
+    }
+    public int removeLast(){
+        if(size == 0){
+            System.out.println("LL is empty");
+        }
+        else if(size == 1){
+            int val =head.data;
+            head = tail = null;
+            size =0;
+            return val;
+        }
+        Node prev = head;
+        int val = prev.next.data;
+        for(int i=0;i<size-2;i++){
+            prev = prev.next;
+        }
+        prev.next =null;
+        tail =prev;
+        size--;
+        return val;
+    }
+    public int iterativeSearch(int key){
+        int idx =0;
+        Node temp = head;
+        while(temp != null){
+            if(temp.data == key){
+                return idx;
+            }
+            temp = temp.next;
+            idx++;
+        }
+        return -1;
+    }
+    
+    public static void main(String args[]){
         iterativeSearch ll = new iterativeSearch();
         ll.addFirst(2);
         ll.addFirst(1);
-        ll.addLast(4);
+         ll.addLast(4);
         ll.addLast(5);
-        ll.add(2,3);
-    }
+        ll.add(2,3 );
+        ll.print();
+        // ll.removeFirst();
+        // ll.print();
+        // ll.removeLast();
+        // ll.print();
+        // System.out.println(ll.size);
+        System.out.println(ll.iterativeSearch(3));
+        System.out.println(ll.iterativeSearch(10));
 }
 }

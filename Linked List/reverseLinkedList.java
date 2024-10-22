@@ -1,4 +1,4 @@
-public class recursiveSearch {
+public class reverseLinkedList {
     public static class Node{
         int data;
         Node next; //node creation
@@ -106,25 +106,22 @@ public class recursiveSearch {
         size--;
         return val;
     }
-    public int helper(Node head,int key){//T.C-O(n)  S.C-O(n)
-        if(head == null){
-            return -1;
-        }
-        if(head.data == key){
-            return 0;
-        }
-        int idx = helper(head.next,key);
-        if(idx == -1){
-            return -1;
-        }
-        return idx+1;
-    }
-    public int recursiveSearch(int key){
-        return helper(head, key);
+    public void reverse(){
+       Node prev =null;
+       Node curr = tail = head;
+       Node next;
+       while(curr!=null){
+        next = curr.next;
+        curr.next = prev;
+        prev = curr;
+        curr = next;
+       }
+       head = prev;
+      
     }
     
     public static void main(String args[]){
-    recursiveSearch ll = new recursiveSearch();
+    reverseLinkedList ll = new reverseLinkedList();
         ll.addFirst(2);
         ll.addFirst(1);
          ll.addLast(4);
@@ -136,7 +133,7 @@ public class recursiveSearch {
         // ll.removeLast();
         // ll.print();
         // System.out.println(ll.size);
-        System.out.println(ll.recursiveSearch(3));
-        System.out.println(ll.recursiveSearch(10));
+        ll.reverse();
+        ll.print();
 }
 }
