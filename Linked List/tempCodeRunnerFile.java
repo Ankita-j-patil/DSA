@@ -1,1 +1,1 @@
-head.next.next.next = head;
+System.out.println(isCycle());
