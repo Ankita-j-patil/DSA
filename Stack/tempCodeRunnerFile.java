@@ -1,1 +1,3 @@
- // System.out.println(sb);
+while (!result.isEmpty()) {
+        //     result.pop();
+        // }
